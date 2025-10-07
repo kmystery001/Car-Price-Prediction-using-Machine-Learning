@@ -29,9 +29,9 @@ Predict car prices based on both numerical and categorical variables to understa
 | **Training Data Split**                   | 80% train / 20% test         |
 | **R² Score**                              | **0.745**                    |
 | **Mean Absolute Percentage Error (MAPE)** | **~36.26%**                  |
-| **Average Actual Price**                  | ₹18,165                      |
-| **Average Predicted Price**               | ₹15,946                      |
-| **Average Deviation (Residual)**          | ₹2,219                       |
+| **Average Actual Price**                  | $18,165                      |
+| **Average Predicted Price**               | $15,946                      |
+| **Average Deviation (Residual)**          | $2,219                       |
 
 **Interpretation:**
 The model captures ~75% of the price variability, showing that it can predict prices within **±36% accuracy** on average — a strong result for a transparent, interpretable regression approach.
@@ -214,7 +214,7 @@ df_pf['Difference%'] = np.absolute(df_pf['Residual']/df_pf['Target']*100)
 
 ## 📈 Model Insights
 
-* The model performs **best for mid-priced vehicles (₹30K–₹35K)** with <1% error.
+* The model performs **best for mid-priced vehicles ($30K–$35K)** with <1% error.
 * Prediction accuracy decreases for luxury and low-end cars due to natural price volatility.
 * Residual distribution confirms no major bias — model generalizes well.
 
